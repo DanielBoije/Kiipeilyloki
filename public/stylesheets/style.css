@@ -1,0 +1,370 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  min-width: 740px;
+}
+body {
+  margin: 0;
+  /* font-family: 'Crimson Text', serif; */
+  font-weight: 400;
+  padding: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+h1 {
+  font-size: 42px;
+  line-height: 55px;
+  margin-left: 80px;
+}
+#wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, fr);
+  grid-gap: 0x;
+  row-gap: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#kiipeilyLoki {
+  display: flex;
+  margin:0;
+  background-color: white;
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  }
+ #kiipeilyloki_hederi{
+  width:50%;
+  color: black;
+  font-weight: 400 ;
+  margin: 0;
+  padding:0;
+  } 
+  #kiipeilyloki_hederi > h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800 ;
+    font-size: 75px;
+    line-height: 70px;
+    margin-bottom: 15px;
+    padding-top: 0;
+    margin-top: 10px;
+    align-items: baseline;
+    } 
+#uusikohde {
+  width:50%;
+  color: black;
+  font-family:'Nunito Sans', sans-serif;
+  font-weight: 400;
+  padding-top: 50px;
+}
+#uusikohde > h2 {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+#uusikohde > input {
+padding: 10px;
+border:  2px solid #e6e6ee;
+border-radius: 5px;
+background-color: #e6e6e6;
+} 
+#uusikohde > button {
+  margin-left: 5px;
+padding: 10px;
+border: 2px solid black;
+border-radius: 5px;
+background-color:black;
+color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+margin-top: 20px;
+letter-spacing: 0.2px;
+font-weight: 600;
+}
+a {
+  color: #00B7FF;
+}
+#poista{
+  background-color: #00B7FF;
+  grid-row: 2;
+}
+#output {
+  vertical-align: baseline;
+}
+#background_image {
+  height: 300px;
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  background-image: url("../images/hunkOverhang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+#poistaNappi {
+  width: 32px;
+  float: right;
+  border: none;
+  color:white;
+  background-color: black;
+}
+#arvioilomake {
+  background-color: white;
+  grid-row: 8 ;
+  grid-column: 1 / span 3;
+  padding: 50px;
+  color: black;
+  font-family:'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+ 
+}
+#arvioilomake h2{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-left: 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  width: 50%;
+}
+#arvioilomake_labels {
+float: left;
+height: 100px;
+line-height: 32px;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 2;
+font-family:'Nunito Sans', sans-serif;
+font-weight: 400;
+}
+#arvioilomake_inputs {
+  margin-left: 50px;
+  width: 200px;
+}
+#arvioi_wrapper{
+  margin: 0;
+  display: flex;
+  padding: 40px; 
+}
+#arvioilomake_input, input {
+  padding: 5px;
+  border: 2px solid white;
+  background-color:#e6e6e6;
+  border-radius: 5px;
+  min-width: 300px;
+  width: 200px; 
+} 
+#etsi {
+  margin-left: 4px;
+  min-width: 120px;
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  color: white;
+  border-style: none;
+  background-color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  /* margin-left: 120px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  margin-top: 20px;
+  border: 2px solid #4d94ff;
+  background-color: #4d94ff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+#arvioi {
+  margin-left: 5px;
+  min-width: 100px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color:black;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  margin-top: 20px;
+  width: 150px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+#palaute{
+  display: flex;
+  /* display: inline-block; */
+  min-width: 330px;
+}
+
+#wrapperkaksi {
+  grid-row: 8;
+  grid-column: 3 /span 2;
+  /* background-color: cadetblue; */
+  background-image: url("../images/kiipeily2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#toivelista{
+  grid-row: 3/ span 4;
+  grid-column: 3 /span 2;
+  padding: 30px;
+  border-left: black solid 1px;
+  background-color: black;
+}
+#toivelista ul {
+  color: white;
+  list-style: none;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2;
+  font-family:'Nunito Sans', sans-serif;
+  font-weight: 200;
+}
+#toivelista h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-left: 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  width: 50%;
+  color: white;
+}
+#arvioidut {
+  grid-row: 3 / span 4;
+  grid-column: 1 / spans 2;
+  padding: 30px;  
+  padding-left: 40px;
+}
+#arvioidut h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#arvioidut ul {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2;
+  font-family:'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin-left: 0px;
+}
+  #output li {
+    vertical-align: text-bottom;
+  }
+.aKohde,
+.aKuvaus,
+.aArvio {
+  list-style: none;
+}
+
+.aLista {
+  display: none;
+}
+
+.aKohde {
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.aKuvaus,
+.aArvio {
+
+  font-family: 'Crimson Text', serif;
+  font-weight: 400 ;
+  font-size: 20px;
+  line-height: 22px;
+}
+#arvioLisatty, #arvioVirhe, #eikohdetta {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 1240px) {
+  body {
+      align-content: center;
+      align-content: center;
+      justify-content: center;
+      align-items: stretch;
+      
+  }
+ 
+  #wrapper {
+      justify-content: center;
+      align-items: stretch;
+      grid-template-columns: 1fr;
+      /* grid-template-rows: repeat(1fr,10) ; */
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: 
+      "kiipeilyLoki"
+      "kiipeilyloki_hederi"
+      "uusikohde"
+      "background_image"
+      "arvioidut"
+      "toivelista"
+      "arvioilomake"
+      "arvioilomake_labels"
+      "arvioilomake_inputs"
+      "wrapperkaksi";
+  }
+    #kiipeilyLoki{
+      grid-area: kiipeilyLoki;
+      grid-row: 1 / span 2;
+      display: grid;
+    }
+    #kiipeilyloki_hederi{
+      grid-area: kiipeilyloki_hederi;
+      grid-row: 1;
+    }
+    #uusikohde {
+      grid-area: uusikohde;
+      grid-row: 2;
+      padding-left: 80px;
+      padding-bottom: 30px;;
+    }
+    #background_image{
+      grid-area: uusikohde;
+      grid-row: 3;
+    }
+    #toivelista{
+      grid-area: toivelista;
+      grid-row: 4;
+    }
+    #arvioidut{
+      grid-area: toivelista;
+      grid-row: 5;
+    }
+    #arvioilomake{
+      display: grid;
+      grid-area: arvioilomake;
+      grid-row: 6 /span 2;
+    }
+    #arvioilomake_labels{
+      grid-area: arvioilomake_labels;
+      grid-row: 6;
+    }
+    #arvioilomake_inputs{
+      grid-area: arvioilomake_inputs;
+      grid-row: 7;
+    }
+    #wrapperkaksi{
+      grid-area: wrapperkaksi;
+      grid-row: 8 / span 4;
+    }
+
+  }
+  /* header {
+      grid-area: header;
+      grid-row: 1;
+      grid-column: 1 /span 4;
+  } */
+
